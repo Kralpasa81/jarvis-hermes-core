@@ -1,0 +1,34 @@
+# Secrets and environment
+.env
+.env.*
+*.key
+*.pem
+*.token
+*token*.json
+*oauth*.json
+secrets/
+credentials/
+
+# Private/runtime data
+data/
+private/
+chat-logs/
+documents/
+exports/
+backups/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+build/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
