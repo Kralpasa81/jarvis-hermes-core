@@ -47,9 +47,13 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 ├── README.md
 ├── docs/
 │   ├── architecture.md
-│   └── roadmap.md
+│   ├── daily/
+│   │   └── YYYY-MM-DD.md
+│   ├── roadmap.md
+│   └── schemas/
+│       └── status_snapshot.md
 ├── examples/
-│   └── .gitkeep
+│   └── status_snapshot.py
 └── .gitignore
 ```
 
@@ -85,6 +89,15 @@ See [`docs/roadmap.md`](docs/roadmap.md).
 ## Architecture Notes
 
 See [`docs/architecture.md`](docs/architecture.md).
+
+## Daily Lab Notes
+
+Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goals, architecture thoughts, small next actions, future module ideas, and secret-safety reminders without exposing private data.
+
+## Safe Examples
+
+- [`examples/status_snapshot.py`](examples/status_snapshot.py) generates public-safe example status JSON for dashboards or assistant messages.
+- [`docs/schemas/status_snapshot.md`](docs/schemas/status_snapshot.md) documents the example payload shape and its safety boundaries.
 
 ---
 
