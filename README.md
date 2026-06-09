@@ -54,6 +54,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │       └── status_snapshot.md
 ├── examples/
 │   ├── config_template_validator.py
+│   ├── ocr_workflow_checklist.py
 │   └── status_snapshot.py
 └── .gitignore
 ```
@@ -99,6 +100,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 
 - [`examples/status_snapshot.py`](examples/status_snapshot.py) generates public-safe example status JSON for dashboards or assistant messages.
 - [`examples/config_template_validator.py`](examples/config_template_validator.py) checks a public-safe JSON config template shape without requiring secrets or private machine details.
+- [`examples/ocr_workflow_checklist.py`](examples/ocr_workflow_checklist.py) prints a public-safe Markdown checklist for OCR/document workflow planning.
 - [`docs/schemas/status_snapshot.md`](docs/schemas/status_snapshot.md) documents the example payload shape and its safety boundaries.
 
 ---
