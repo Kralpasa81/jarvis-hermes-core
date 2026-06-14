@@ -53,6 +53,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   └── schemas/
 │       └── status_snapshot.md
 ├── examples/
+│   ├── action_review.py
 │   ├── approval_matrix.py
 │   ├── config_template_validator.py
 │   ├── dashboard_mock_data.py
@@ -100,6 +101,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 
 ## Safe Examples
 
+- [`examples/action_review.py`](examples/action_review.py) reviews a generic assistant action and prints a public-safe approval/risk preview without executing anything.
 - [`examples/approval_matrix.py`](examples/approval_matrix.py) prints a public-safe action approval matrix as Markdown or JSON.
 - [`examples/status_snapshot.py`](examples/status_snapshot.py) generates public-safe example status JSON for dashboards or assistant messages.
 - [`examples/config_template_validator.py`](examples/config_template_validator.py) checks a public-safe JSON config template shape without requiring secrets or private machine details.
