@@ -58,6 +58,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── config_template_validator.py
 │   ├── dashboard_mock_data.py
 │   ├── module_boundary_card.py
+│   ├── module_handoff_checklist.py
 │   ├── ocr_workflow_checklist.py
 │   ├── status_snapshot.py
 │   └── workflow_readiness_gate.py
@@ -109,6 +110,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/config_template_validator.py`](examples/config_template_validator.py) checks a public-safe JSON config template shape without requiring secrets or private machine details.
 - [`examples/dashboard_mock_data.py`](examples/dashboard_mock_data.py) prints synthetic dashboard cards as JSON or Markdown for public-safe UI prototypes.
 - [`examples/module_boundary_card.py`](examples/module_boundary_card.py) generates a public-safe module boundary card that documents allowed inputs, blocked private data, approval policy, and safe preview behavior.
+- [`examples/module_handoff_checklist.py`](examples/module_handoff_checklist.py) prints a public-safe handoff checklist for a proposed module before private adapters are attached.
 - [`examples/ocr_workflow_checklist.py`](examples/ocr_workflow_checklist.py) prints a public-safe Markdown checklist for OCR/document workflow planning.
 - [`examples/workflow_readiness_gate.py`](examples/workflow_readiness_gate.py) evaluates whether a generic workflow is draft, preview-ready, approval-required, private-runtime-only, or blocked for public use.
 - [`docs/schemas/status_snapshot.md`](docs/schemas/status_snapshot.md) documents the example payload shape and its safety boundaries.
