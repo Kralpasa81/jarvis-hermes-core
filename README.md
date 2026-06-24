@@ -62,6 +62,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── notification_digest.py
 │   ├── ocr_workflow_checklist.py
 │   ├── public_payload_redactor.py
+│   ├── safe_command_router.py
 │   ├── status_snapshot.py
 │   └── workflow_readiness_gate.py
 └── .gitignore
@@ -116,6 +117,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/notification_digest.py`](examples/notification_digest.py) prints a synthetic notification digest preview and marks items that require approval before external delivery.
 - [`examples/ocr_workflow_checklist.py`](examples/ocr_workflow_checklist.py) prints a public-safe Markdown checklist for OCR/document workflow planning.
 - [`examples/public_payload_redactor.py`](examples/public_payload_redactor.py) redacts risky key-name fields from synthetic JSON payloads before they are copied into public docs or dashboard mockups.
+- [`examples/safe_command_router.py`](examples/safe_command_router.py) classifies a generic command into a module and approval level without executing actions or echoing private input text.
 - [`examples/workflow_readiness_gate.py`](examples/workflow_readiness_gate.py) evaluates whether a generic workflow is draft, preview-ready, approval-required, private-runtime-only, or blocked for public use.
 - [`docs/schemas/status_snapshot.md`](docs/schemas/status_snapshot.md) documents the example payload shape and its safety boundaries.
 
