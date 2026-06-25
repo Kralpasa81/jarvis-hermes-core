@@ -70,6 +70,17 @@ Each module should have:
 
 The dashboard should reflect real working services. It should not fake device state or workflow success. If a backend is unavailable, the dashboard should show that clearly.
 
+### 5. Runtime Boundary Contract
+
+Before a public module grows into a private runtime integration, document a small boundary contract:
+
+- **Public surface** — synthetic inputs, schemas, dry-run previews, and generic usage notes that are safe to show in GitHub.
+- **Private adapter** — credentials, local paths, account IDs, device identifiers, chat targets, and network details that must stay outside the public repository.
+- **Approval path** — whether the module is read-only, preview-only, approval-required, strong-approval-required, private-runtime-only, or blocked.
+- **Verification** — a safe test command or checklist that proves the public example works without contacting real services.
+
+This keeps roadmap notes useful without implying that unfinished integrations are already connected to production accounts, devices, or personal data.
+
 ## Future Components
 
 - `assistant-gateway/` — chat command entry points
