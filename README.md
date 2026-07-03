@@ -114,6 +114,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/status_snapshot.py`](examples/status_snapshot.py) generates public-safe example status JSON for dashboards or assistant messages.
 - [`examples/config_template_validator.py`](examples/config_template_validator.py) checks a public-safe JSON config template shape without requiring secrets or private machine details.
 - [`examples/dashboard_mock_data.py`](examples/dashboard_mock_data.py) prints synthetic dashboard cards as JSON or Markdown for public-safe UI prototypes.
+- [`examples/integration_readiness_report.py`](examples/integration_readiness_report.py) evaluates a synthetic module description and prints a pass / warn / block integration readiness summary without calling APIs or reading private configuration.
 - [`examples/module_boundary_card.py`](examples/module_boundary_card.py) generates a public-safe module boundary card that documents allowed inputs, blocked private data, approval policy, and safe preview behavior.
 - [`examples/module_handoff_checklist.py`](examples/module_handoff_checklist.py) prints a public-safe handoff checklist for a proposed module before private adapters are attached.
 - [`examples/module_preview_manifest.py`](examples/module_preview_manifest.py) generates a synthetic public contract for a future module, including mock inputs, blocked private data, preview outputs, and approval level.
