@@ -59,6 +59,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── dashboard_mock_data.py
 │   ├── module_boundary_card.py
 │   ├── module_handoff_checklist.py
+│   ├── module_health_review.py
 │   ├── module_preview_manifest.py
 │   ├── module_registry_builder.py
 │   ├── notification_digest.py
@@ -118,6 +119,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/integration_readiness_report.py`](examples/integration_readiness_report.py) evaluates a synthetic module description and prints a pass / warn / block integration readiness summary without calling APIs or reading private configuration.
 - [`examples/module_boundary_card.py`](examples/module_boundary_card.py) generates a public-safe module boundary card that documents allowed inputs, blocked private data, approval policy, and safe preview behavior.
 - [`examples/module_handoff_checklist.py`](examples/module_handoff_checklist.py) prints a public-safe handoff checklist for a proposed module before private adapters are attached.
+- [`examples/module_health_review.py`](examples/module_health_review.py) reads a JSON module registry (file, stdin, or embedded demo data) and flags entries whose `next_review` date is overdue or due soon, using only safe status/date metadata.
 - [`examples/module_preview_manifest.py`](examples/module_preview_manifest.py) generates a synthetic public contract for a future module, including mock inputs, blocked private data, preview outputs, and approval level.
 - [`examples/module_registry_builder.py`](examples/module_registry_builder.py) prints a synthetic public-safe module registry for roadmap, dashboard, and review planning without reading private runtime configuration.
 - [`examples/notification_digest.py`](examples/notification_digest.py) prints a synthetic notification digest preview and marks items that require approval before external delivery.
