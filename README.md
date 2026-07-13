@@ -114,8 +114,12 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/action_review.py`](examples/action_review.py) reviews a generic assistant action and prints a public-safe approval/risk preview without executing anything.
 - [`examples/approval_matrix.py`](examples/approval_matrix.py) prints a public-safe action approval matrix as Markdown or JSON.
 - [`examples/status_snapshot.py`](examples/status_snapshot.py) generates public-safe example status JSON for dashboards or assistant messages.
+- [`examples/config_drift_detector.py`](examples/config_drift_detector.py) compares two config *schemas* (key names and value types only, never real values) and reports structural drift such as missing keys or type mismatches between environments.
 - [`examples/config_template_validator.py`](examples/config_template_validator.py) checks a public-safe JSON config template shape without requiring secrets or private machine details.
 - [`examples/dashboard_mock_data.py`](examples/dashboard_mock_data.py) prints synthetic dashboard cards as JSON or Markdown for public-safe UI prototypes.
+- [`examples/dependency_graph_reporter.py`](examples/dependency_graph_reporter.py) reads a module dependency definition and prints both a JSON report and a Mermaid.js diagram of the dependency graph.
+- [`examples/event_log_formatter.py`](examples/event_log_formatter.py) converts structured event log entries into human-readable text output.
+- [`examples/capability_matrix_builder.py`](examples/capability_matrix_builder.py) evaluates a sample module list against safe capability categories and prints a capability matrix report.
 - [`examples/integration_readiness_report.py`](examples/integration_readiness_report.py) evaluates a synthetic module description and prints a pass / warn / block integration readiness summary without calling APIs or reading private configuration.
 - [`examples/module_boundary_card.py`](examples/module_boundary_card.py) generates a public-safe module boundary card that documents allowed inputs, blocked private data, approval policy, and safe preview behavior.
 - [`examples/module_handoff_checklist.py`](examples/module_handoff_checklist.py) prints a public-safe handoff checklist for a proposed module before private adapters are attached.
