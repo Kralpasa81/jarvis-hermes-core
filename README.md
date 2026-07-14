@@ -112,6 +112,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 ## Safe Examples
 
 - [`examples/action_review.py`](examples/action_review.py) reviews a generic assistant action and prints a public-safe approval/risk preview without executing anything.
+- [`examples/approval_audit_trail.py`](examples/approval_audit_trail.py) standardizes a public-safe approval-history record shape (who/what level approved an action and when) using only generic role labels, never real identities.
 - [`examples/approval_matrix.py`](examples/approval_matrix.py) prints a public-safe action approval matrix as Markdown or JSON.
 - [`examples/status_snapshot.py`](examples/status_snapshot.py) generates public-safe example status JSON for dashboards or assistant messages.
 - [`examples/config_drift_detector.py`](examples/config_drift_detector.py) compares two config *schemas* (key names and value types only, never real values) and reports structural drift such as missing keys or type mismatches between environments.
