@@ -66,6 +66,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── ocr_workflow_checklist.py
 │   ├── public_payload_redactor.py
 │   ├── public_safety_scan.py
+│   ├── retention_policy_preview.py
 │   ├── safe_command_router.py
 │   ├── status_snapshot.py
 │   └── workflow_readiness_gate.py
@@ -131,6 +132,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/ocr_workflow_checklist.py`](examples/ocr_workflow_checklist.py) prints a public-safe Markdown checklist for OCR/document workflow planning.
 - [`examples/public_payload_redactor.py`](examples/public_payload_redactor.py) redacts risky key-name fields from synthetic JSON payloads before they are copied into public docs or dashboard mockups.
 - [`examples/public_safety_scan.py`](examples/public_safety_scan.py) scans local repo files for high-signal public-safety risk patterns without printing matched secret-like values.
+- [`examples/retention_policy_preview.py`](examples/retention_policy_preview.py) previews how long a known public-safe record type (e.g. an audit trail or dashboard snapshot) would be kept, using generic policy labels only — no real deletion job, deletion date, or storage location.
 - [`examples/safe_command_router.py`](examples/safe_command_router.py) classifies a generic command into a module and approval level without executing actions or echoing private input text.
 - [`examples/weekly_review_summary.py`](examples/weekly_review_summary.py) reads all Markdown daily notes from `docs/daily/` and prints a summary table (or JSON) showing each note's date, focus line, and whether a future-module idea or security reminder was mentioned. Supports `--week` to filter to the current calendar week.
 - [`examples/workflow_readiness_gate.py`](examples/workflow_readiness_gate.py) evaluates whether a generic workflow is draft, preview-ready, approval-required, private-runtime-only, or blocked for public use.
