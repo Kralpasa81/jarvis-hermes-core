@@ -53,6 +53,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   └── schemas/
 │       └── status_snapshot.md
 ├── examples/
+│   ├── access_scope_preview.py
 │   ├── action_review.py
 │   ├── approval_matrix.py
 │   ├── config_template_validator.py
@@ -112,6 +113,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 
 ## Safe Examples
 
+- [`examples/access_scope_preview.py`](examples/access_scope_preview.py) previews who, in generic terms, could see a known public-safe record type (e.g. an audit trail or dashboard snapshot) using visibility labels only — no real role, account id, or device address.
 - [`examples/action_review.py`](examples/action_review.py) reviews a generic assistant action and prints a public-safe approval/risk preview without executing anything.
 - [`examples/approval_audit_trail.py`](examples/approval_audit_trail.py) standardizes a public-safe approval-history record shape (who/what level approved an action and when) using only generic role labels, never real identities.
 - [`examples/approval_matrix.py`](examples/approval_matrix.py) prints a public-safe action approval matrix as Markdown or JSON.
