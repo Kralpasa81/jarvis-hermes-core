@@ -63,6 +63,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── module_health_review.py
 │   ├── module_preview_manifest.py
 │   ├── module_registry_builder.py
+│   ├── notification_channel_gate.py
 │   ├── notification_digest.py
 │   ├── ocr_workflow_checklist.py
 │   ├── public_payload_redactor.py
@@ -130,6 +131,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/module_health_review.py`](examples/module_health_review.py) reads a JSON module registry (file, stdin, or embedded demo data) and flags entries whose `next_review` date is overdue or due soon, using only safe status/date metadata.
 - [`examples/module_preview_manifest.py`](examples/module_preview_manifest.py) generates a synthetic public contract for a future module, including mock inputs, blocked private data, preview outputs, and approval level.
 - [`examples/module_registry_builder.py`](examples/module_registry_builder.py) prints a synthetic public-safe module registry for roadmap, dashboard, and review planning without reading private runtime configuration.
+- [`examples/notification_channel_gate.py`](examples/notification_channel_gate.py) previews which generic notification channel (e.g. local HUD, internal review queue, external channel) fits a known record type and visibility scope, using only public-safe labels — no real chat id, webhook, or bot token.
 - [`examples/notification_digest.py`](examples/notification_digest.py) prints a synthetic notification digest preview and marks items that require approval before external delivery.
 - [`examples/ocr_workflow_checklist.py`](examples/ocr_workflow_checklist.py) prints a public-safe Markdown checklist for OCR/document workflow planning.
 - [`examples/public_payload_redactor.py`](examples/public_payload_redactor.py) redacts risky key-name fields from synthetic JSON payloads before they are copied into public docs or dashboard mockups.
