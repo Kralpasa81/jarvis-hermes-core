@@ -58,6 +58,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── approval_matrix.py
 │   ├── config_template_validator.py
 │   ├── dashboard_mock_data.py
+│   ├── escalation_history_ledger.py
 │   ├── escalation_path_preview.py
 │   ├── module_boundary_card.py
 │   ├── module_handoff_checklist.py
@@ -124,6 +125,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/config_template_validator.py`](examples/config_template_validator.py) checks a public-safe JSON config template shape without requiring secrets or private machine details.
 - [`examples/dashboard_mock_data.py`](examples/dashboard_mock_data.py) prints synthetic dashboard cards as JSON or Markdown for public-safe UI prototypes.
 - [`examples/dependency_graph_reporter.py`](examples/dependency_graph_reporter.py) reads a module dependency definition and prints both a JSON report and a Mermaid.js diagram of the dependency graph.
+- [`examples/escalation_history_ledger.py`](examples/escalation_history_ledger.py) previews how an escalation-worthy outcome from `escalation_path_preview.py` (`escalate_to_internal_review` or `request_human_approval`) would be recorded as a standard ledger entry, using only generic review-window and ledger-status labels — no real event log is written and no real date/reviewer is recorded.
 - [`examples/escalation_path_preview.py`](examples/escalation_path_preview.py) previews which generic escalation step (e.g. silently drop, escalate to internal review, request human approval) fits a channel-fit mismatch from `notification_channel_gate.py`, using only public-safe labels — no real alert, page, or notification is sent.
 - [`examples/event_log_formatter.py`](examples/event_log_formatter.py) converts structured event log entries into human-readable text output.
 - [`examples/capability_matrix_builder.py`](examples/capability_matrix_builder.py) evaluates a sample module list against safe capability categories and prints a capability matrix report.
