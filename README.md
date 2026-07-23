@@ -57,6 +57,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── action_review.py
 │   ├── approval_matrix.py
 │   ├── config_template_validator.py
+│   ├── daily_note_health_check.py
 │   ├── dashboard_mock_data.py
 │   ├── escalation_history_ledger.py
 │   ├── escalation_path_preview.py
@@ -125,6 +126,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/status_snapshot.py`](examples/status_snapshot.py) generates public-safe example status JSON for dashboards or assistant messages.
 - [`examples/config_drift_detector.py`](examples/config_drift_detector.py) compares two config *schemas* (key names and value types only, never real values) and reports structural drift such as missing keys or type mismatches between environments.
 - [`examples/config_template_validator.py`](examples/config_template_validator.py) checks a public-safe JSON config template shape without requiring secrets or private machine details.
+- [`examples/daily_note_health_check.py`](examples/daily_note_health_check.py) is a keyword-based static check that reports, per `docs/daily/*.md` note, whether each expected section (focus, architecture note, actionable task, future module idea, security reminder) appears to be present — no note content is judged or modified, only section presence.
 - [`examples/dashboard_mock_data.py`](examples/dashboard_mock_data.py) prints synthetic dashboard cards as JSON or Markdown for public-safe UI prototypes.
 - [`examples/dependency_graph_reporter.py`](examples/dependency_graph_reporter.py) reads a module dependency definition and prints both a JSON report and a Mermaid.js diagram of the dependency graph.
 - [`examples/escalation_history_ledger.py`](examples/escalation_history_ledger.py) previews how an escalation-worthy outcome from `escalation_path_preview.py` (`escalate_to_internal_review` or `request_human_approval`) would be recorded as a standard ledger entry, using only generic review-window and ledger-status labels — no real event log is written and no real date/reviewer is recorded.
