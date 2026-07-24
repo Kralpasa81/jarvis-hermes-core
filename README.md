@@ -61,6 +61,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── dashboard_mock_data.py
 │   ├── escalation_history_ledger.py
 │   ├── escalation_path_preview.py
+│   ├── example_catalog_indexer.py
 │   ├── module_boundary_card.py
 │   ├── module_handoff_checklist.py
 │   ├── module_health_review.py
@@ -131,6 +132,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/dependency_graph_reporter.py`](examples/dependency_graph_reporter.py) reads a module dependency definition and prints both a JSON report and a Mermaid.js diagram of the dependency graph.
 - [`examples/escalation_history_ledger.py`](examples/escalation_history_ledger.py) previews how an escalation-worthy outcome from `escalation_path_preview.py` (`escalate_to_internal_review` or `request_human_approval`) would be recorded as a standard ledger entry, using only generic review-window and ledger-status labels — no real event log is written and no real date/reviewer is recorded.
 - [`examples/escalation_path_preview.py`](examples/escalation_path_preview.py) previews which generic escalation step (e.g. silently drop, escalate to internal review, request human approval) fits a channel-fit mismatch from `notification_channel_gate.py`, using only public-safe labels — no real alert, page, or notification is sent.
+- [`examples/example_catalog_indexer.py`](examples/example_catalog_indexer.py) cross-checks every `examples/*.py` docstring title and `Usage:` block against the README "Safe Examples" table and reports `ok` / `missing-usage` / `missing-readme` / `no-docstring` / `readme-only` per file — it never edits the README or any example file, only reports drift.
 - [`examples/event_log_formatter.py`](examples/event_log_formatter.py) converts structured event log entries into human-readable text output.
 - [`examples/capability_matrix_builder.py`](examples/capability_matrix_builder.py) evaluates a sample module list against safe capability categories and prints a capability matrix report.
 - [`examples/integration_readiness_report.py`](examples/integration_readiness_report.py) evaluates a synthetic module description and prints a pass / warn / block integration readiness summary without calling APIs or reading private configuration.
