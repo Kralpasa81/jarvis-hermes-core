@@ -74,6 +74,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── public_payload_redactor.py
 │   ├── public_safety_scan.py
 │   ├── retention_policy_preview.py
+│   ├── roadmap_phase_tracker.py
 │   ├── safe_command_router.py
 │   ├── status_snapshot.py
 │   ├── weekly_ledger_digest.py
@@ -148,6 +149,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/public_payload_redactor.py`](examples/public_payload_redactor.py) redacts risky key-name fields from synthetic JSON payloads before they are copied into public docs or dashboard mockups.
 - [`examples/public_safety_scan.py`](examples/public_safety_scan.py) scans local repo files for high-signal public-safety risk patterns without printing matched secret-like values.
 - [`examples/retention_policy_preview.py`](examples/retention_policy_preview.py) previews how long a known public-safe record type (e.g. an audit trail or dashboard snapshot) would be kept, using generic policy labels only — no real deletion job, deletion date, or storage location.
+- [`examples/roadmap_phase_tracker.py`](examples/roadmap_phase_tracker.py) previews rough keyword overlap between `docs/roadmap.md` phase bullets and completed checklist items in `docs/daily/*.md` — a coarse, read-only pointer for a human to look closer at, never a real completion tracker.
 - [`examples/safe_command_router.py`](examples/safe_command_router.py) classifies a generic command into a module and approval level without executing actions or echoing private input text.
 - [`examples/weekly_ledger_digest.py`](examples/weekly_ledger_digest.py) counts a fixed, embedded sample set of `escalation_history_ledger.py`-shaped entries and reports how many are `logged_pending_review` versus `logged_resolved`, grouped by record type — no real event log or daily note is read.
 - [`examples/weekly_review_summary.py`](examples/weekly_review_summary.py) reads all Markdown daily notes from `docs/daily/` and prints a summary table (or JSON) showing each note's date, focus line, and whether a future-module idea or security reminder was mentioned. Supports `--week` to filter to the current calendar week.
