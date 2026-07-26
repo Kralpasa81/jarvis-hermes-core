@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 """
 Basit bir status JSON üretici örneği.
-Çalıştırmak için: python3 examples/status_json_generator.py
+
+Tamamen sabit/örnek (synthetic) verilerle bir servis durumu JSON'u üretir --
+gerçek bir servis, port veya süreç izlemez; hiçbir dosya, ortam değişkeni
+veya ağ kaynağı okumaz.
+
+Usage:
+  python3 examples/status_json_generator.py
 """
 import json
 from datetime import datetime

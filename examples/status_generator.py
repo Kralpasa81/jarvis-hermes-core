@@ -2,6 +2,13 @@
 """
 Simple status JSON generator for jarvis-hermes-core examples.
 No network, no keys, harmless.
+
+Only reads the local OS name and Python version (both already public in any
+Python environment) and the current UTC time. No files, environment
+variables, or network sources are read.
+
+Usage:
+  python3 examples/status_generator.py
 """
 import json
 import platform
