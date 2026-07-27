@@ -5,6 +5,11 @@ This example is intentionally public-safe: it does not call APIs, inspect the
 host machine, read private config, control devices, or publish messages. It only
 turns a generic action category into a small review record that can be printed
 as Markdown or JSON.
+
+Usage:
+  python3 examples/action_review.py read_only
+  python3 examples/action_review.py external_publish --title "Post weekly digest"
+  python3 examples/action_review.py device_control --format json
 """
 
 from __future__ import annotations

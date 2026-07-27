@@ -5,6 +5,10 @@ The matrix is intentionally generic. It does not call APIs, read local
 configuration, inspect devices, or require credentials. Use it as a small
 planning aid for deciding which assistant actions can be automatic and which
 must wait for explicit human confirmation.
+
+Usage:
+  python3 examples/approval_matrix.py
+  python3 examples/approval_matrix.py --format json
 """
 
 from __future__ import annotations

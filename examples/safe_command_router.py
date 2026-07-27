@@ -6,6 +6,11 @@ read private files, inspect devices, send messages, publish content, or require
 credentials. It turns a generic command phrase into a public-safe routing preview
 so module boundaries and approval levels can be reviewed before a private runtime
 is connected.
+
+Usage:
+  python3 examples/safe_command_router.py
+  python3 examples/safe_command_router.py --command "toggle living room light"
+  python3 examples/safe_command_router.py --command "share my api key" --format json
 """
 
 from __future__ import annotations
