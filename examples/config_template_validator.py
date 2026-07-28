@@ -5,6 +5,10 @@ The validator is intentionally small and dependency-free. It checks the shape of
 an example configuration without requiring real tokens, hostnames, device names,
 or private paths. It is meant for public documentation and CI-style smoke tests,
 not for loading private production configuration.
+
+Usage:
+  python3 examples/config_template_validator.py
+  python3 examples/config_template_validator.py --file path/to/template.json
 """
 
 from __future__ import annotations

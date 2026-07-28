@@ -5,6 +5,11 @@ The output is synthetic and deterministic by default. It is intended for UI
 layout experiments, documentation screenshots, and tests that should not depend
 on real devices, private documents, API keys, home-network details, or live
 service state.
+
+Usage:
+  python3 examples/dashboard_mock_data.py
+  python3 examples/dashboard_mock_data.py --profile roadmap-review
+  python3 examples/dashboard_mock_data.py --format markdown
 """
 
 from __future__ import annotations

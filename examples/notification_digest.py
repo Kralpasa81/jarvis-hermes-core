@@ -5,6 +5,10 @@ This helper uses only synthetic items. It does not read messages, tokens,
 chat IDs, local files, calendars, device state, or network resources. The goal
 is to prototype how a daily assistant digest might group low-risk updates while
 marking items that should wait for explicit human approval.
+
+Usage:
+  python3 examples/notification_digest.py
+  python3 examples/notification_digest.py --format json
 """
 
 from __future__ import annotations
