@@ -5,6 +5,10 @@ This example is intentionally offline and dependency-free. It does not read loca
 configuration, inspect devices, call APIs, publish messages, or require secrets.
 Use it to describe what a module may safely accept, what it must block, and which
 approval rule should apply before a real private integration is attached.
+
+Usage:
+  python3 examples/module_boundary_card.py dashboard
+  python3 examples/module_boundary_card.py smart_home --format json
 """
 
 from __future__ import annotations

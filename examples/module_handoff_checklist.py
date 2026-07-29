@@ -4,6 +4,11 @@
 This example is intentionally offline and dependency-free. It does not read local
 configuration, inspect private files, call APIs, send messages, control devices,
 or require credentials. Use it before attaching a real private adapter.
+
+Usage:
+  python3 examples/module_handoff_checklist.py --module dashboard
+  python3 examples/module_handoff_checklist.py --module smart_home --action-level blocked
+  python3 examples/module_handoff_checklist.py --module documents --format json
 """
 
 from __future__ import annotations

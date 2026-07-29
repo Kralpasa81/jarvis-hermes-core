@@ -5,6 +5,11 @@ This example is dependency-free, local-only, and uses demo metadata only. It is
 intended for roadmap, dashboard, and review planning without reading private
 configuration, environment variables, account identifiers, device addresses, or
 runtime credentials.
+
+Usage:
+  python3 examples/module_registry_builder.py
+  python3 examples/module_registry_builder.py --status prototype
+  python3 examples/module_registry_builder.py --format json
 """
 
 from __future__ import annotations
