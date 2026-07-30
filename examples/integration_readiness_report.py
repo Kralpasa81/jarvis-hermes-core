@@ -5,6 +5,11 @@ This example is intentionally offline and dependency-free. It evaluates only
 explicit checklist flags for a synthetic module description; it does not read
 private configuration, inspect local devices, call APIs, send notifications, or
 require tokens.
+
+Usage:
+  python3 examples/integration_readiness_report.py
+  python3 examples/integration_readiness_report.py --module dashboard --has-public-contract --has-approval-rule
+  python3 examples/integration_readiness_report.py --module dashboard --contains-sensitive-detail --format json
 """
 
 from __future__ import annotations

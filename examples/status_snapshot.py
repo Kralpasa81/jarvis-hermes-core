@@ -4,6 +4,11 @@
 This script intentionally uses fake/example data only. It is useful for
 front-end dashboard experiments without exposing real devices, tokens,
 home-network details, or personal documents.
+
+Usage:
+  python3 examples/status_snapshot.py
+  python3 examples/status_snapshot.py --profile public-demo
+  python3 examples/status_snapshot.py --module telegram_gateway:ready:low
 """
 
 from __future__ import annotations

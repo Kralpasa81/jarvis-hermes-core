@@ -4,6 +4,11 @@
 The manifest is intentionally synthetic: it documents a proposed module's public
 contract, mock input boundary, approval level, and private-data blocks without
 reading secrets, device identifiers, personal files, or network settings.
+
+Usage:
+  python3 examples/module_preview_manifest.py
+  python3 examples/module_preview_manifest.py --module dashboard --approval confirm
+  python3 examples/module_preview_manifest.py --module smart_home --approval blocked --format markdown
 """
 
 from __future__ import annotations
