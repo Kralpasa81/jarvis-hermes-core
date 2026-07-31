@@ -5,6 +5,11 @@ This example is intentionally offline and dependency-free. It does not inspect
 private files unless the user explicitly passes a JSON input path, and it never
 calls external services. It is meant for synthetic demo payloads before they are
 copied into public docs, screenshots, dashboard mockups, or README examples.
+
+Usage:
+  python3 examples/public_payload_redactor.py
+  python3 examples/public_payload_redactor.py --format json
+  python3 examples/public_payload_redactor.py --input demo_payload.json --format markdown
 """
 
 from __future__ import annotations

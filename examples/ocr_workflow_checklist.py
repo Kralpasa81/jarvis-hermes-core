@@ -5,6 +5,11 @@ The checklist is meant for planning Jarvis / Hermes document workflows without
 processing real files or exposing private paths, document names, IDs, tokens, or
 personal data. It prints Markdown so the output can be pasted into an issue,
 lab note, or dashboard card.
+
+Usage:
+  python3 examples/ocr_workflow_checklist.py
+  python3 examples/ocr_workflow_checklist.py --workflow-label invoice-intake
+  python3 examples/ocr_workflow_checklist.py --include-placeholders
 """
 
 from __future__ import annotations

@@ -5,6 +5,11 @@ This example is intentionally offline and dependency-free. It does not read
 private config, inspect local devices, call external APIs, send messages, or
 require tokens. It only turns generic checklist flags into a small readiness
 report that can be printed as Markdown or JSON.
+
+Usage:
+  python3 examples/workflow_readiness_gate.py
+  python3 examples/workflow_readiness_gate.py --workflow "Weather briefing" --module monitoring --has-safe-input --has-preview
+  python3 examples/workflow_readiness_gate.py --module smart_home --approval-rule device_control --uses-private-runtime --format json
 """
 
 from __future__ import annotations
