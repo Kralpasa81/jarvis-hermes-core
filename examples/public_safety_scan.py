@@ -5,6 +5,11 @@ The scanner looks for high-signal patterns that should not appear in a public
 repo: token-like literals, private-key blocks, credential assignments, private
 network URLs, and accidental .env files. It does not contact any service and it
 prints only file paths, line numbers, and rule names -- never the matched value.
+
+Usage:
+  python3 examples/public_safety_scan.py                 # scan current directory
+  python3 examples/public_safety_scan.py . --format json
+  python3 examples/public_safety_scan.py path/to/repo
 """
 
 from __future__ import annotations

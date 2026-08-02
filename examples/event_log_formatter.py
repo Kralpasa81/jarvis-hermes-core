@@ -5,10 +5,10 @@ event_log_formatter.py
 Jarvis/Hermes örnek aracı: Yapılandırılmış event verilerini
 insanın okuyabileceği metin formatına dönüştürür.
 
-Kullanım:
-    python3 event_log_formatter.py
-
 Gereksinim: Sadece Python standart kütüphane. Token/API key yok.
+
+Usage:
+  python3 examples/event_log_formatter.py
 """
 
 import json

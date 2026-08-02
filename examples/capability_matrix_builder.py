@@ -9,7 +9,9 @@ her modülü önceden tanımlı yetenek kategorilerine göre değerlendirir
 ve bir Capability Matrix raporu üretir.
 
 Hiçbir harici bağımlılık, API anahtarı veya ağ bağlantısı gerektirmez.
-Çalıştırmak için: python3 capability_matrix_builder.py
+
+Usage:
+  python3 examples/capability_matrix_builder.py
 """
 
 from __future__ import annotations
