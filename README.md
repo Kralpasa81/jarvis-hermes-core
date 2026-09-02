@@ -77,6 +77,7 @@ The long-term goal is to connect useful everyday workflows into one reliable com
 │   ├── roadmap_phase_tracker.py
 │   ├── safe_command_router.py
 │   ├── status_snapshot.py
+│   ├── session_timeline_formatter.py
 │   ├── weekly_ledger_digest.py
 │   └── workflow_readiness_gate.py
 └── .gitignore
@@ -154,6 +155,7 @@ Safe daily planning notes live in [`docs/daily/`](docs/daily/). They record goal
 - [`examples/status_generator.py`](examples/status_generator.py) prints a minimal local status JSON (OS name, Python version, UTC timestamp) with no files, environment variables, or network access.
 - [`examples/status_json_generator.py`](examples/status_json_generator.py) prints a synthetic, fixed-shape service status JSON (core/scheduler/examples components, two example checks) for dashboard mockups -- no real service is monitored.
 - [`examples/weekly_ledger_digest.py`](examples/weekly_ledger_digest.py) counts a fixed, embedded sample set of `escalation_history_ledger.py`-shaped entries and reports how many are `logged_pending_review` versus `logged_resolved`, grouped by record type — no real event log or daily note is read.
+- [`examples/session_timeline_formatter.py`](examples/session_timeline_formatter.py) converts a list of structured event-log dictionaries (`{timestamp, module, event, level, detail}`) into a colour-annotated human-readable timeline, plus a summary with per-module/per-level counts and total span in seconds. No secrets, no API keys.
 - [`examples/weekly_review_summary.py`](examples/weekly_review_summary.py) reads all Markdown daily notes from `docs/daily/` and prints a summary table (or JSON) showing each note's date, focus line, and whether a future-module idea or security reminder was mentioned. Supports `--week` to filter to the current calendar week.
 - [`examples/workflow_readiness_gate.py`](examples/workflow_readiness_gate.py) evaluates whether a generic workflow is draft, preview-ready, approval-required, private-runtime-only, or blocked for public use.
 - [`docs/schemas/status_snapshot.md`](docs/schemas/status_snapshot.md) documents the example payload shape and its safety boundaries.
